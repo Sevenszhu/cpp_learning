@@ -8,7 +8,7 @@ int main(){
         }else if((s + t - 1) / t <= m){
                 cout << m - ((s + t - 1) / t) << endl;
         }else{
-                cout << m << endl;
+                cout << 0 << endl;
         }
         return 0;
 }
