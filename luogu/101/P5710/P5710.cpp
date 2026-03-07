@@ -5,6 +5,12 @@ int main(){
         int x;
         cin >> x;
         bool P1 = x % 2 == 0, P2 = (x > 4) && (x <= 12);
+        // for boolean algebra in cpp
+        // we define 
+        // && AND gate
+        // || OR gate   
+        // ! NOT gate
+        // ^ NOR gate
         cout << (P1 && P2) << ' ' << (P1 || P2) << ' ' << ((!P1 && P2) || (P1 && !P2)) << ' ' << (!P1 && !P2) << endl;
         return 0;
 }
