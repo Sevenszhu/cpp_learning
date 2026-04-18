@@ -1,15 +1,22 @@
 #include<iostream>
 using namespace std;
 int main(){
-        // the first two positions of 100 is 00
-        int x = 100;
         int n = 0;
         cin >> n;
-        for(int i = 1; i <= n; i++){
-                for(int j = 1; j <= (6 - i); j++){
-                        printf("%d", (int)((((double)(++x) / 100) - 1)) * 100);
+        
+        // count is the number written down
+        int count = 1;
+        // let the square from top to down be n to 1
+        // and there are n values on nth line
+        for(int i = n; i >= 1; i--){
+                for(int j = i; j >= 1; j--){
+                        printf("%02d", count);
+                        // when move to the next position, value + 1
+                        count ++;
                 }
+                // when a line is over, open a new line
                 cout << endl;
         }
+        
         return 0;
 }
